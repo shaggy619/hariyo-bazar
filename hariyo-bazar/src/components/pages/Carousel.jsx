@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 const carouselItems = [
-  { id: 1, image: "src/Images/slider-1.png", href: "www.google.com" },
+  { id: 1, image: "src/Images/slider-1.png" },
   { id: 2, image: "src/Images/slider-2.png" },
   { id: 3, image: "src/Images/slider-3.png" },
 ];
@@ -30,7 +30,7 @@ const Carousel = () => {
   );
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -47,7 +47,6 @@ const Carousel = () => {
         {carouselItems.map((item) => (
           <div key={item.id}>
             <img src={item.image} alt={item.caption} className="w-full" />
-            <p className="text-center">{item.caption}</p>
           </div>
         ))}
       </Slider>

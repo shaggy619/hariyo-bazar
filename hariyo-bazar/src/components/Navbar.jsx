@@ -12,7 +12,7 @@ const Navbar = () => {
       </p>
       <nav className="flex justify-between items-center max-w-screen-2xl py-5 w-4/5 m-auto">
         <div className="flex gap-5 items-center">
-          <h2 className="text-medium-green font-josefin-sans font-semibold text-3xl">
+          <h2 className="text-medium-green font-josefin-sans font-semibold text-3xl ">
             <a href="#">Hariyo Bazar</a>
           </h2>
         </div>
