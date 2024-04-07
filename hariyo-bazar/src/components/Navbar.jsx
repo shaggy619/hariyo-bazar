@@ -10,23 +10,24 @@ const Navbar = () => {
       <p className="bg-medium-green text-white text-center py-1 font-josefin-sans">
         Get upto 70% off on plants!
       </p>
-      <nav className="flex justify-between items-center max-w-screen-2xl py-5 w-4/5 m-auto">
-        <div className="flex gap-5 items-center">
-          <h2 className="text-medium-green font-josefin-sans font-semibold text-3xl ">
+      <nav className="flex items-center max-w-screen-2xl py-5 w-4/5 m-auto">
+        <div className="flex-initial gap-5 items-center">
+          <h2 className="text-medium-green font-josefin-sans font-semibold text-3xl max-sm:text-lg max-md:text-xl max-lg:text-2xl ">
             <a href="#">Hariyo Bazar</a>
           </h2>
         </div>
-        <div className="flex items-center">
+        <div className="flex flex-1 items-center justify-center">
           <input
             type="text"
             placeholder="Search"
-            className="appearance-none bg-gray-100 rounded-full px-5 py-2 w-[400px] ml-3 focus:outline-medium-green"
+            className=" bg-gray-100 rounded-full px-5 py-2 w-[80%] ml-3 focus:outline-medium-green"
           />
           <button>
             <CiSearch className="text-xl text-gray-400 relative right-10" />
           </button>
         </div>
-        <div className="flex gap-7 items-center">
+
+        <div className="flex gap-7 max-lg:gap-3 items-center">
           <div>
             <a href="">
               <BsHeart className="text-xl text-medium-green" />
