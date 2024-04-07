@@ -6,7 +6,7 @@ import { BsHeart } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <header className="relative shadow z-20">
+    <header className="w-full bg-white  bg-opacity-80 backdrop-blur-lg fixed shadow top-0 z-20">
       <p className="bg-medium-green text-white text-center py-1 font-josefin-sans">
         Get upto 70% off on plants!
       </p>

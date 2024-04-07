@@ -42,7 +42,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-[80%] mx-auto relative mt-5 text-dark-green">
+    <div className="w-[80%] mx-auto relative mt-5 text-dark-green pt-32">
       <Slider {...settings}>
         {carouselItems.map((item) => (
           <div key={item.id}>
