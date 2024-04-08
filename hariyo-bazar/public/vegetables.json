@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Cabbage",
+    "img": "src/Images/Vegetables/cabbage.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 2,
+    "title": "Cauliflower",
+    "img": "src/Images/Vegetables/cauli.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 3,
+    "title": "Potato",
+    "img": "src/Images/Vegetables/potato.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 4,
+    "title": "Tomato",
+    "img": "src/Images/Vegetables/tomato.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 5,
+    "title": "Carrot",
+    "img": "src/Images/Vegetables/carrot.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 6,
+    "title": "Carrot2",
+    "img": "src/Images/Vegetables/carrot.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 7,
+    "title": "Tomato2",
+    "img": "src/Images/Vegetables/tomato.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 8,
+    "title": "Potato2",
+    "img": "src/Images/Vegetables/potato.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 9,
+    "title": "Cauliflower2",
+    "img": "src/Images/Vegetables/cauli.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 10,
+    "title": "Cabbage2",
+    "img": "src/Images/Vegetables/cabbage.png",
+    "price": "1",
+    "unit": "kg"
+  }
+]
