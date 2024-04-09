@@ -11,7 +11,7 @@ const Categories = () => {
   return (
     <>
       <div className="flex justify-center">
-        <h2 className="text-center font-medium text-xl max-sm:text-base max-md:text-lg mt-[2em] mb-[-15px] border-b-2 border-dark-green inline-block">
+        <h2 className="text-center font-medium text-xl max-sm:text-base max-md:text-lg mt-[2em] mb-[-15px] border-y-2 border-medium-green inline-block px-3  text-medium-green">
           Categories
         </h2>
       </div>
