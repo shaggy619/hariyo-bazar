@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Apple",
+    "img": "src/Images/Fruits/apple.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 2,
+    "title": "Mango",
+    "img": "src/Images/Fruits/mango.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 3,
+    "title": "Banana",
+    "img": "src/Images/Fruits/banana.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 4,
+    "title": "Orange",
+    "img": "src/Images/Fruits/orange.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 5,
+    "title": "Pomegranate",
+    "img": "src/Images/Fruits/pomegranate.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 6,
+    "title": "Guava",
+    "img": "src/Images/Fruits/guava.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 7,
+    "title": "Banana",
+    "img": "src/Images/Fruits/banana.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "id": 8,
+    "title": "Orange",
+    "img": "src/Images/Fruits/orange.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 9,
+    "title": "Pomegranate",
+    "img": "src/Images/Fruits/pomegranate.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "id": 10,
+    "title": "Guava",
+    "img": "src/Images/Fruits/guava.png",
+    "price": "2",
+    "unit": "kg"
+  }
+]

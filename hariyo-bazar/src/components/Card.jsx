@@ -4,9 +4,9 @@ import { FaCartPlus } from "react-icons/fa";
 const Card = ({ item }) => {
   return (
     <div className="shadow-2xl rounded overflow-hidden">
-      <img src={item.img} alt={item.title} className="w-[200px]" />
+      <img src={item.img} alt={item.title} className="w-[15em]" />
       <div className="px-4">
-        <h2 className="font-medium">{item.title}</h2>
+        <h2 className="font-medium pt-2">{item.title}</h2>
         <p>{item.description}</p>
         <p>
           ${item.price}

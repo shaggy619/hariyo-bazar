@@ -2,15 +2,15 @@ import React from "react";
 import Card from "../components/Card";
 import UseFetchItems from "../components/UseFetchItems";
 
-const Vegetables = () => {
-  const { items, isLoading, error } = UseFetchItems("/vegetables.json");
+const Fruits = () => {
+  const { items, isLoading, error } = UseFetchItems("/fruits.json");
   if (isLoading) return <div>Loading....</div>;
   if (error) return <div>Error: {error.message}</div>;
   return (
     <>
       <div className="w-[80%] m-auto">
-        <h2 className=" text-medium-green font-medium border-l-[1rem] border-medium-green inline-block px-2 py-1 mt-5 mb-8 text-xl rounded">
-          Vegetables
+        <h2 className=" text-medium-green font-medium border-l-[1rem] border-medium-green inline-block px-2 py-1 my-8 text-xl rounded">
+          Fruits
         </h2>
       </div>
       <div className="grid grid-cols-5 w-[80%] m-auto gap-2 max-md:grid-cols-3 max-sm:grid-cols-2 max-lg:grid-cols-4">
@@ -22,4 +22,4 @@ const Vegetables = () => {
   );
 };
 
-export default Vegetables;
+export default Fruits;
