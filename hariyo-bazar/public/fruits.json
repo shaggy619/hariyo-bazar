@@ -18,7 +18,7 @@
     "title": "Banana",
     "img": "src/Images/Fruits/banana.png",
     "price": "1",
-    "unit": "kg"
+    "unit": "dozen"
   },
   {
     "id": 4,
@@ -43,29 +43,29 @@
   },
   {
     "id": 7,
-    "title": "Banana",
-    "img": "src/Images/Fruits/banana.png",
+    "title": "Strawberry",
+    "img": "src/Images/Fruits/strawberry.png",
     "price": "1",
     "unit": "kg"
   },
   {
     "id": 8,
-    "title": "Orange",
-    "img": "src/Images/Fruits/orange.png",
+    "title": "Pineapple",
+    "img": "src/Images/Fruits/pineapple.png",
     "price": "2",
     "unit": "kg"
   },
   {
     "id": 9,
-    "title": "Pomegranate",
-    "img": "src/Images/Fruits/pomegranate.png",
+    "title": "Litchi",
+    "img": "src/Images/Fruits/litchi.png",
     "price": "2",
     "unit": "kg"
   },
   {
     "id": 10,
-    "title": "Guava",
-    "img": "src/Images/Fruits/guava.png",
+    "title": "grapes",
+    "img": "src/Images/Fruits/grapes.png",
     "price": "2",
     "unit": "kg"
   }

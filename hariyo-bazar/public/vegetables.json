@@ -36,36 +36,36 @@
   },
   {
     "id": 6,
-    "title": "Carrot2",
-    "img": "src/Images/Vegetables/carrot.png",
+    "title": "Pumpkin",
+    "img": "src/Images/Vegetables/pumpkin.png",
     "price": "1",
     "unit": "kg"
   },
   {
     "id": 7,
-    "title": "Tomato2",
-    "img": "src/Images/Vegetables/tomato.png",
+    "title": "Spinach",
+    "img": "src/Images/Vegetables/spinach.png",
     "price": "2",
     "unit": "kg"
   },
   {
     "id": 8,
-    "title": "Potato2",
-    "img": "src/Images/Vegetables/potato.png",
+    "title": "Pea",
+    "img": "src/Images/Vegetables/pea.png",
     "price": "1",
     "unit": "kg"
   },
   {
     "id": 9,
-    "title": "Cauliflower2",
-    "img": "src/Images/Vegetables/cauli.png",
+    "title": "Onion",
+    "img": "src/Images/Vegetables/onion.png",
     "price": "2",
     "unit": "kg"
   },
   {
     "id": 10,
-    "title": "Cabbage2",
-    "img": "src/Images/Vegetables/cabbage.png",
+    "title": "Bean",
+    "img": "src/Images/Vegetables/bean.png",
     "price": "1",
     "unit": "kg"
   }
