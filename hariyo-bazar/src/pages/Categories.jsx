@@ -19,7 +19,12 @@ const Categories = () => {
       <div className="flex w-[80%] m-auto items-center justify-between">
         {categoryImages.map(({ id, img, title }) => (
           <div key={id}>
-            <img src={img} alt={title} className="w-[250px] img-shadow"></img>
+            <img
+              src={img}
+              alt={title}
+              className="w-[250px] img-shadow transform transition-transform duration-300 cursor-pointer  ease-in-out hover:scale-105"
+            ></img>
+
             <div className="text-center relative top-[-20px]">
               <a href="#" className=" text-dark-green font-medium ">
                 {title}

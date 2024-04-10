@@ -3,7 +3,7 @@ import { FaCartPlus } from "react-icons/fa";
 
 const Card = ({ item }) => {
   return (
-    <div className="shadow-lg rounded overflow-hidden">
+    <div className="shadow rounded overflow-hidden hover:shadow-xl transform transition-shadow duration-300 ease-in-out hover:scale-[1.005]">
       <img src={item.img} alt={item.title} className="w-[15em]" />
       <div className="px-4">
         <h2 className="font-medium pt-2">{item.title}</h2>

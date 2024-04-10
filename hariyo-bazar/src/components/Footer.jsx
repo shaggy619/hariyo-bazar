@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="text-white">
+            <div className="text-white max-md:hidden">
               <h2 className="font-semibold text-lg">Follow Us:</h2>
 
               <ul className="flex text-xl gap-2">
