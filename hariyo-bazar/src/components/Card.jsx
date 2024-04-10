@@ -12,8 +12,8 @@ const Card = ({ item }) => {
           ${item.price}
           <span className="text-gray-400 text-sm">/{item.unit}</span>
         </p>
-        <button className="bg-medium-green text-white w-full rounded mt-2 mb-5 py-1 flex justify-center gap-3 items-center">
-          <FaCartPlus />
+        <button className="bg-medium-green text-white w-full rounded mt-2 mb-5 py-1 flex justify-center gap-3 max-lg:gap-1 items-center">
+          <FaCartPlus className="max-sm:hidden" />
           Add To Cart
         </button>
       </div>

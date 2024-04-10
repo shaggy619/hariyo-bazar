@@ -11,22 +11,22 @@ const Categories = () => {
   return (
     <>
       <div className="flex justify-center">
-        <h2 className="text-center font-medium text-xl max-sm:text-base max-md:text-lg mt-[2em] mb-[-15px] border-y-2 border-medium-green inline-block px-3  text-medium-green">
+        <h2 className="text-center font-medium text-xl max-md:text-lg mt-[2em] mb-[-15px] border-y-2 border-medium-green inline-block px-3  text-medium-green">
           Categories
         </h2>
       </div>
 
-      <div className="flex w-[80%] m-auto items-center justify-between">
+      <div className="flex items-center justify-between max-md:flex-col">
         {categoryImages.map(({ id, img, title }) => (
           <div key={id}>
             <img
               src={img}
               alt={title}
-              className="w-[250px] img-shadow transform transition-transform duration-300 cursor-pointer  ease-in-out hover:scale-105"
+              className="w-[15em] max-md:w-[10em] img-shadow transform transition-transform duration-300 cursor-pointer  ease-in-out hover:scale-105"
             ></img>
 
             <div className="text-center relative top-[-20px]">
-              <a href="#" className=" text-dark-green font-medium ">
+              <a href="#" className=" text-medium-green font-medium ">
                 {title}
               </a>
             </div>

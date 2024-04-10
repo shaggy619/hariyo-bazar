@@ -22,31 +22,31 @@ const Navbar = () => {
             </a>
           </h2>
         </div>
-        <div className="flex flex-1 items-center justify-center">
+        <div className="flex flex-1 items-center justify-center max-sm:w-full">
           <input
             type="text"
             placeholder="Search"
-            className=" bg-gray-100 rounded-full px-5 max-sm:py-1 py-2 w-[80%]  ml-3 max-sm:placeholder:text-sm focus:outline-medium-green"
+            className=" bg-gray-100 rounded-full px-5 max-sm:py-1 py-2 w-[80%] max-sm:w-[100%]  ml-3 focus:outline-medium-green"
           />
-          <button>
-            <CiSearch className="text-lg text-gray-400 relative right-10" />
+          <button className="relative right-10 max-sm:right-7">
+            <CiSearch className="max-sm:text-lg text-xl text-gray-400 " />
           </button>
         </div>
 
         <div className="flex gap-7 max-lg:gap-3 items-center">
           <div>
             <a href="">
-              <BsHeart className="text-lg text-medium-green" />
+              <BsHeart className="text-xl text-medium-green" />
             </a>
           </div>
           <div>
             <a href="">
-              <GiShoppingCart className="text-2xl text-medium-green" />
+              <GiShoppingCart className="text-3xl text-medium-green" />
             </a>
           </div>
           <div>
             <a href="">
-              <FaUserCircle className="text-xl border border-medium-green rounded-full text-medium-green hidden max-md:block" />
+              <FaUserCircle className="text-2xl border border-medium-green rounded-full text-medium-green hidden max-md:block" />
             </a>
           </div>
 

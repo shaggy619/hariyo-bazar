@@ -8,7 +8,7 @@ import Vegetables from "./Vegetables";
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-[80%] m-auto max-sm:w-[90%]">
       <Carousel />
       <Categories />
       <Vegetables />
