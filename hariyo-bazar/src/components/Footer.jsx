@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="text-white max-sm:pt-3 text-center">
+            <div className="text-white max-sm:pt-3 max-sm:text-center">
               <h2 className="font-semibold text-lg">Visit Us:</h2>
               {visitSection.map(({ id, icon, content }) => (
                 <div

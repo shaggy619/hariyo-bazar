@@ -5,6 +5,8 @@ import { FaUserCircle } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
 
 const Navbar = () => {
+  const cartItemCount = 3;
+
   return (
     <header className="w-full bg-white  bg-opacity-80 backdrop-blur-lg fixed shadow top-0 z-20">
       <p className="bg-medium-green text-white text-center py-1 font-josefin-sans max-sm:text-sm max-md:text-base max-lg:text-lg">
@@ -39,10 +41,15 @@ const Navbar = () => {
               <BsHeart className="text-xl text-medium-green" />
             </a>
           </div>
-          <div>
+          <div className="relative">
             <a href="">
               <GiShoppingCart className="text-3xl text-medium-green" />
             </a>
+            {cartItemCount > 0 && (
+              <div className="absolute top-[-3px] right-[-4px] bg-medium-green text-white w-4 h-4 rounded-full flex items-center justify-center text-xs">
+                {cartItemCount}
+              </div>
+            )}
           </div>
           <div>
             <a href="">
