@@ -3,8 +3,25 @@ import { CiSearch } from "react-icons/ci";
 import { GiShoppingCart } from "react-icons/gi";
 import { FaUserCircle } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
+import { useState } from "react";
+import Menu from "./Menu";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsMenuOpen(true);
+  };
+  const handleMouseLeave = () => {
+    setIsMenuOpen(false);
+  };
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleOnclick = () => {
+    setIsClicked((prevState) => !prevState);
+  };
+
   const cartItemCount = 3;
 
   return (
@@ -12,7 +29,10 @@ const Navbar = () => {
       <p className="bg-medium-green text-white text-center py-1 font-josefin-sans max-sm:text-sm max-md:text-base max-lg:text-lg">
         Get upto 70% off on plants!
       </p>
-      <nav className="flex items-center max-sm:py-3 py-5 w-[80%] max-sm:w-[90%] m-auto">
+      <nav
+        className="flex items-center max-sm:py-3 py-5 w-[80%] max-sm:w-[90%] m-auto relative"
+        onMouseLeave={handleMouseLeave}
+      >
         <div className="flex-initial gap-5 items-center">
           <h2 className="text-medium-green font-josefin-sans font-semibold text-3xl max-sm:text-lg max-md:text-xl max-lg:text-2xl">
             <a href="#" className="max-sm:hidden">
@@ -52,18 +72,26 @@ const Navbar = () => {
             )}
           </div>
           <div>
-            <a href="">
-              <FaUserCircle className="text-2xl border border-medium-green rounded-full text-medium-green hidden max-md:block" />
+            <a>
+              <FaUserCircle
+                className="text-2xl border border-medium-green rounded-full text-medium-green hidden max-md:block"
+                onClick={handleOnclick}
+              />
             </a>
           </div>
 
-          <div className="flex items-center gap-2 rounded-full px-5 py-1 shadow cursor-pointer max-md:hidden">
+          <div
+            className="flex items-center gap-2 rounded-full px-5 py-1 shadow cursor-pointer max-md:hidden"
+            onMouseOver={handleMouseEnter}
+          >
             <div>
               <p>Account</p>
               <p className="text-xs text-center">Sign In</p>
             </div>
             <FaUserCircle className="text-3xl text-medium-green" />
           </div>
+          {isMenuOpen && <Menu />}
+          {isClicked && <Menu handleOnclick={handleOnclick} />}
         </div>
       </nav>
     </header>
