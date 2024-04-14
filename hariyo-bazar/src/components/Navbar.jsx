@@ -5,6 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
 import { useState } from "react";
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,9 +36,9 @@ const Navbar = () => {
       >
         <div className="flex-initial gap-5 items-center">
           <h2 className="text-medium-green font-josefin-sans font-semibold text-3xl max-sm:text-lg max-md:text-xl max-lg:text-2xl">
-            <a href="#" className="max-sm:hidden">
+            <Link to="/" className="max-sm:hidden">
               Hariyo Bazar
-            </a>
+            </Link>
             <a href="#" className="hidden max-sm:block">
               {" "}
               <img src="favicon.png" alt="" className="w-[1.8em]" />{" "}
@@ -62,9 +63,9 @@ const Navbar = () => {
             </a>
           </div>
           <div className="relative">
-            <a href="">
+            <Link to="cart-info">
               <GiShoppingCart className="text-3xl text-medium-green" />
-            </a>
+            </Link>
             {cartItemCount > 0 && (
               <div className="absolute top-[-3px] right-[-4px] bg-medium-green text-white w-4 h-4 rounded-full flex items-center justify-center text-xs">
                 {cartItemCount}
