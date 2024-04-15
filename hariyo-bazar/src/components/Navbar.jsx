@@ -39,10 +39,10 @@ const Navbar = () => {
             <Link to="/" className="max-sm:hidden">
               Hariyo Bazar
             </Link>
-            <a href="#" className="hidden max-sm:block">
+            <Link to="/" className="hidden max-sm:block">
               {" "}
               <img src="favicon.png" alt="" className="w-[1.8em]" />{" "}
-            </a>
+            </Link>
           </h2>
         </div>
         <div className="flex flex-1 items-center justify-center max-sm:w-full">

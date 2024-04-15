@@ -18,39 +18,48 @@ const cartInfo = [
 
 const CartInfo = () => {
   return (
-    <div className="relative top-36 mb-40">
-      <div className="w-[80%] m-auto shadow rounded p-5 text-center my-5">
-        <div className="flex justify-between pb-2 font-medium">
+    <div className="relative top-36 max-sm:top-20 mb-40 max-sm:mb-24">
+      <div className="w-[80%] max-sm:w-[90%] m-auto shadow rounded p-5 text-center my-5">
+        <div className="flex justify-between pb-2 font-medium max-sm:hidden">
           <div className="w-[10em]">Product</div>
           <div className="w-[6em]">Price</div>
           <div className="w-[6em]">Quantity</div>
           <div className="w-[6em]">Total</div>
           <div className="w-[6em]">Remove</div>
         </div>
-        <hr />
+        <hr className="max-sm:hidden" />
 
         {cartInfo.map(({ id, img, title, price }) => (
           <div key={id}>
-            <div className="flex justify-between items-center py-2 ">
+            <div className="flex justify-between items-center py-2 max-sm:block max-sm:relative">
               <div className="w-[10em] flex items-center">
                 <img src={img} alt={title} className="w-[6em]" />
                 <div className="pl-2">
                   <h2 className="font-medium">{title}</h2>
                   <p className="text-medium-green text-start">Fruits</p>
+                  <p className="hidden max-sm:block text-left">${price}</p>
                 </div>
               </div>
-              <div className="w-[6em]">${price}</div>
-              <div className="flex gap-2 w-[6em]">
-                <button className="bg-gray-200 px-1">
-                  <FiMinus />
-                </button>
-                <div className="w-[6em]">2</div>
-                <button className="bg-gray-200 px-1">
-                  <GoPlus />
-                </button>
+              <div className="w-[6em] max-sm:hidden">${price}</div>
+              <div className="max-sm:flex max-sm:justify-center max-sm:w-full  max-sm:py-3">
+                <div className="flex gap-2 w-[6em]">
+                  <button className="bg-gray-200 px-1">
+                    <FiMinus />
+                  </button>
+                  <div className="w-[6em]">2</div>
+                  <button className="bg-gray-200 px-1">
+                    <GoPlus />
+                  </button>
+                </div>
               </div>
-              <div className="w-[6em]">${price * 2}</div>
-              <div className="w-[6em]">
+              <div className="w-[6em] max-sm:w-full max-sm:text-right">
+                <span className="hidden max-sm:inline-block">Total: </span>
+                <span className="max-sm:text-medium-green max-sm:font-medium">
+                  {" "}
+                  ${price * 2}{" "}
+                </span>
+              </div>
+              <div className="w-[6em] max-sm:w-full max-sm:text-right max-sm:absolute top-2">
                 <button className="hover:text-red-600">
                   <FaTrash />
                 </button>
@@ -60,8 +69,8 @@ const CartInfo = () => {
           </div>
         ))}
       </div>
-      <div className="w-[80%] m-auto">
-        <div className="w-[50%] shadow-lg rounded my-5 ml-auto p-5">
+      <div className="w-[80%] max-md:w-[90%] m-auto">
+        <div className="w-[50%] max-sm:w-full shadow-lg rounded my-5 ml-auto p-5">
           <h2 className="text-lg font-medium">Order Summary</h2>
           <div className="flex justify-between py-1">
             <p>Subtotal (1 items)</p>
