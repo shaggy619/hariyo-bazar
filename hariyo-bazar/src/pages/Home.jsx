@@ -1,20 +1,14 @@
 import React from "react";
 import Carousel from "./Carousel";
 import Categories from "./Categories";
-import Dairy from "./Dairy";
-import Fruits from "./Fruits";
-import Plants from "./Plants";
-import Vegetables from "./Vegetables";
+import Products from "./Products";
 
 const Home = () => {
   return (
     <div className="w-[80%] m-auto max-sm:w-[90%]">
       <Carousel />
       <Categories />
-      <Vegetables />
-      <Fruits />
-      <Dairy />
-      <Plants />
+      <Products />
     </div>
   );
 };

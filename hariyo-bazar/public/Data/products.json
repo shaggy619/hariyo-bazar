@@ -1,0 +1,324 @@
+[
+  {
+    "categories": "Fruits",
+    "id": 1,
+    "title": "Apple",
+    "img": "src/Images/Fruits/apple.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 2,
+    "title": "Mango",
+    "img": "src/Images/Fruits/mango.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 3,
+    "title": "Banana",
+    "img": "src/Images/Fruits/banana.png",
+    "price": "1",
+    "unit": "dozen"
+  },
+  {
+    "categories": "Fruits",
+    "id": 4,
+    "title": "Orange",
+    "img": "src/Images/Fruits/orange.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 5,
+    "title": "Pomegranate",
+    "img": "src/Images/Fruits/pomegranate.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 6,
+    "title": "Guava",
+    "img": "src/Images/Fruits/guava.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 7,
+    "title": "Strawberry",
+    "img": "src/Images/Fruits/strawberry.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 8,
+    "title": "Pineapple",
+    "img": "src/Images/Fruits/pineapple.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 9,
+    "title": "Litchi",
+    "img": "src/Images/Fruits/litchi.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Fruits",
+    "id": 10,
+    "title": "grapes",
+    "img": "src/Images/Fruits/grapes.png",
+    "price": "2",
+    "unit": "kg"
+  },
+
+  {
+    "categories": "Vegetables",
+    "id": 11,
+    "title": "Cabbage",
+    "img": "src/Images/Vegetables/cabbage.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 12,
+    "title": "Cauliflower",
+    "img": "src/Images/Vegetables/cauli.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 13,
+    "title": "Potato",
+    "img": "src/Images/Vegetables/potato.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 14,
+    "title": "Tomato",
+    "img": "src/Images/Vegetables/tomato.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 15,
+    "title": "Carrot",
+    "img": "src/Images/Vegetables/carrot.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 16,
+    "title": "Pumpkin",
+    "img": "src/Images/Vegetables/pumpkin.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 17,
+    "title": "Spinach",
+    "img": "src/Images/Vegetables/spinach.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 18,
+    "title": "Pea",
+    "img": "src/Images/Vegetables/pea.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 19,
+    "title": "Onion",
+    "img": "src/Images/Vegetables/onion.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Vegetables",
+    "id": 20,
+    "title": "Bean",
+    "img": "src/Images/Vegetables/bean.png",
+    "price": "1",
+    "unit": "kg"
+  },
+
+  {
+    "categories": "Plants",
+    "id": 21,
+    "title": "Bonsai",
+    "img": "src/Images/Plants/bonsai.png",
+    "price": "1",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 22,
+    "title": "Money",
+    "img": "src/Images/Plants/money.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 23,
+    "title": "Crasulla",
+    "img": "src/Images/Plants/crasulla.png",
+    "price": "1",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 24,
+    "title": "Aurem",
+    "img": "src/Images/Plants/aurem.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 25,
+    "title": "Basil",
+    "img": "src/Images/Plants/basil.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 26,
+    "title": "Bloom",
+    "img": "src/Images/Plants/bloom.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 27,
+    "title": "Peppermint",
+    "img": "src/Images/Plants/peppermint.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 28,
+    "title": "Jasmine",
+    "img": "src/Images/Plants/jasmine.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 29,
+    "title": "Monella",
+    "img": "src/Images/Plants/monella.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Plants",
+    "id": 30,
+    "title": "Jass",
+    "img": "src/Images/Plants/jass.png",
+    "price": "2",
+    "unit": "item"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 31,
+    "title": "Milk",
+    "img": "src/Images/Dairy/milk.png",
+    "price": "1",
+    "unit": "ltr"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 32,
+    "title": "Yogurt",
+    "img": "src/Images/Dairy/yogurt.png",
+    "price": "2",
+    "unit": "ltr"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 33,
+    "title": "Cheese",
+    "img": "src/Images/Dairy/cheese.png",
+    "price": "1",
+    "unit": "kg"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 34,
+    "title": "Paneer",
+    "img": "src/Images/Dairy/paneer.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 35,
+    "title": "Ghee",
+    "img": "src/Images/Dairy/ghee.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 36,
+    "title": "Butter",
+    "img": "src/Images/Dairy/butter.png",
+    "price": "2",
+    "unit": "kg"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 37,
+    "title": "Moi",
+    "img": "src/Images/Dairy/moi.png",
+    "price": "2",
+    "unit": "ltr"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 38,
+    "title": "Cream",
+    "img": "src/Images/Dairy/cream.png",
+    "price": "2",
+    "unit": "pack"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 39,
+    "title": "Ice Cream",
+    "img": "src/Images/Dairy/ice cream.png",
+    "price": "2",
+    "unit": "cone"
+  },
+  {
+    "categories": "Dairy Products",
+    "id": 40,
+    "title": "Chhurpi",
+    "img": "src/Images/Dairy/chhurpi.png",
+    "price": "2",
+    "unit": "kg"
+  }
+]
