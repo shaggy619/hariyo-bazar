@@ -6,6 +6,8 @@ import { BsHeart } from "react-icons/bs";
 import { useState } from "react";
 import Menu from "./Menu";
 import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
+import { useContext } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = () => {
     setIsClicked((prevState) => !prevState);
   };
 
-  const cartItemCount = 3;
+  const { cartItems } = useContext(CartContext);
 
   return (
     <header className="w-full bg-white  bg-opacity-80 backdrop-blur-lg fixed shadow top-0 z-20">
@@ -66,9 +68,9 @@ const Navbar = () => {
             <Link to="cart-info">
               <GiShoppingCart className="text-3xl text-medium-green" />
             </Link>
-            {cartItemCount > 0 && (
+            {cartItems.length > 0 && (
               <div className="absolute top-[-3px] right-[-4px] bg-medium-green text-white w-4 h-4 rounded-full flex items-center justify-center text-xs">
-                {cartItemCount}
+                {cartItems.length}
               </div>
             )}
           </div>

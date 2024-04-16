@@ -1,29 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { FaCartPlus } from "react-icons/fa";
+import { CartContext } from "./CartContext";
 
 const Card = ({ item }) => {
   const [content, setContent] = useState("Add To Cart");
   const [itemCount, setItemCount] = useState(0);
-  const [cartItem, setCartItem] = useState([]);
+  const { addToCart } = useContext(CartContext);
 
-  const addToCart = () => {
+  const handleAddToCart = () => {
+    addToCart(item);
     setContent("Added!");
     setTimeout(() => {
       setContent("Add More");
     }, 1000);
     setItemCount((prevCount) => prevCount + 1);
   };
-
-  useEffect(() => {
-    const newItem = {
-      id: item.id,
-      img: item.img,
-      title: item.title,
-      quantity: itemCount + 1,
-    };
-    setCartItem([...cartItem, newItem]);
-    console.log(cartItem);
-  }, [itemCount]);
 
   return (
     <div className="shadow rounded overflow-hidden hover:shadow-xl transform transition-shadow duration-300 ease-in-out hover:scale-[1.005]">
@@ -36,7 +27,7 @@ const Card = ({ item }) => {
           <span className="text-gray-400 text-sm">/{item.unit}</span>
         </p>
         <button
-          onClick={addToCart}
+          onClick={handleAddToCart}
           className="bg-medium-green text-white w-full rounded mt-2 mb-5 py-1 flex justify-center gap-3 max-lg:gap-1 items-center"
         >
           <FaCartPlus className="max-sm:hidden" />
