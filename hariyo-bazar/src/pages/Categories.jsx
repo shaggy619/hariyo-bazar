@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Categories = () => {
   const categoryImages = [
-    { id: 1, img: "src/Images/vegetables.png", title: "Vegetables" },
-    { id: 2, img: "src/Images/frutits.png", title: "Fruits" },
-    { id: 3, img: "src/Images/dairy.png", title: "Dairy Products" },
-    { id: 4, img: "src/Images/plant.png", title: "Plants" },
+    { id: 1, img: "Images/vegetables.png", title: "Vegetables" },
+    { id: 2, img: "Images/frutits.png", title: "Fruits" },
+    { id: 3, img: "Images/dairy.png", title: "Dairy Products" },
+    { id: 4, img: "Images/plant.png", title: "Plants" },
   ];
   return (
     <>

@@ -44,7 +44,7 @@ const CartInfo = () => {
         {cartItems.length == 0 && (
           <div className="w-[80%] m-auto shadow rounded-xl pb-10">
             <div className="m-auto w-[30%] max-sm:w-[50%]">
-              <img src="src/Images/cart.png" alt="" className="w-full" />
+              <img src="Images/cart.png" alt="Empty Cart" className="w-full" />
             </div>
             <div className="text-center">
               <p className="text-gray-500">Your Cart Is Empty </p>

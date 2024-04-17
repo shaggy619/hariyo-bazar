@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 const carouselItems = [
-  { id: 1, image: "src/Images/slider-1.png" },
-  { id: 2, image: "src/Images/slider-2.png" },
-  { id: 3, image: "src/Images/slider-3.png" },
+  { id: 1, image: "Images/slider-1.png" },
+  { id: 2, image: "Images/slider-2.png" },
+  { id: 3, image: "Images/slider-3.png" },
 ];
 
 const Carousel = () => {
