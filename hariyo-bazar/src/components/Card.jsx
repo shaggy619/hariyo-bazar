@@ -4,8 +4,7 @@ import { CartContext } from "./CartContext";
 
 const Card = ({ item }) => {
   const [content, setContent] = useState("Add To Cart");
-  const [itemCount, setItemCount] = useState(0);
-  const { addToCart } = useContext(CartContext);
+  const { cartItems, addToCart, increaseQuantity } = useContext(CartContext);
 
   const handleAddToCart = () => {
     addToCart(item);
@@ -13,8 +12,9 @@ const Card = ({ item }) => {
     setTimeout(() => {
       setContent("Add More");
     }, 1000);
-    setItemCount((prevCount) => prevCount + 1);
   };
+
+  const cartItem = cartItems.find((cartItem) => cartItem.id === item.id);
 
   return (
     <div className="shadow rounded overflow-hidden hover:shadow-xl transform transition-shadow duration-300 ease-in-out hover:scale-[1.005]">
@@ -23,7 +23,7 @@ const Card = ({ item }) => {
         <h2 className="font-medium pt-2">{item.title}</h2>
         <p>{item.description}</p>
         <p>
-          ${item.price}
+          Rs.{item.price}
           <span className="text-gray-400 text-sm">/{item.unit}</span>
         </p>
         <button
@@ -32,9 +32,9 @@ const Card = ({ item }) => {
         >
           <FaCartPlus className="max-sm:hidden" />
           {content}
-          {itemCount > 0 && (
+          {cartItem && (
             <span className="flex items-center justify-center max-md:w-4 max-md:h-4 w-5 h-5 text-sm bg-white rounded-full text-medium-green">
-              {itemCount}
+              {cartItem.quantity}
             </span>
           )}
         </button>

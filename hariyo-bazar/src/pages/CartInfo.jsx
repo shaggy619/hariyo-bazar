@@ -21,6 +21,23 @@ const CartInfo = () => {
     removeItem(itemId);
   };
 
+  const totalPrice = cartItems.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
+
+  const totalQuantity = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
+  let deliveryFee = 0;
+  if (totalQuantity < 5) {
+    deliveryFee = 50;
+  } else if (totalQuantity < 10) {
+    deliveryFee = 30;
+  }
+
   return (
     <div>
       <div className="relative top-36 max-sm:top-20 mb-40 max-sm:mb-24">
@@ -112,14 +129,14 @@ const CartInfo = () => {
             </div>
             <div className="w-[80%] max-md:w-[90%] m-auto">
               <div className="w-[50%] max-sm:w-full shadow-lg rounded my-5 ml-auto p-5">
-                <h2 className="text-lg font-medium">Order Summary</h2>
+                <h2 className="text-lg font-medium">Order Summary:</h2>
                 <div className="flex justify-between py-1">
-                  <p>Subtotal (1 items)</p>
-                  <p>Rs.200</p>
+                  <p>Subtotal ({totalQuantity} items)</p>
+                  <p>Rs. {totalPrice}</p>
                 </div>
                 <div className="flex justify-between py-1">
                   <p>Shipping Fee</p>
-                  <p>Rs.20</p>
+                  <p>{deliveryFee}</p>
                 </div>
                 <div className="flex justify-between py-2">
                   <input
@@ -133,11 +150,13 @@ const CartInfo = () => {
                 </div>
                 <div className="flex justify-between py-1">
                   <p>Total</p>
-                  <p className="text-medium-green text-lg">Rs. 220</p>
+                  <p className="text-medium-green text-lg">
+                    Rs. {totalPrice + deliveryFee}
+                  </p>
                 </div>
                 <div className="text-center">
                   <button className="bg-medium-green text-white w-full py-3 rounded-sm mt-2">
-                    Proceed To CheckOut (1)
+                    Proceed To CheckOut ({totalQuantity})
                   </button>
                 </div>
               </div>

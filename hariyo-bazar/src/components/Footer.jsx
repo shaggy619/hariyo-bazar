@@ -12,10 +12,22 @@ const visitSection = [
 ];
 
 const socials = [
-  { id: 1, icon: <FaFacebookF /> },
-  { id: 2, icon: <FaTwitter /> },
-  { id: 3, icon: <FaYoutube /> },
-  { id: 4, icon: <PiInstagramLogoFill /> },
+  {
+    id: 1,
+    icon: <FaFacebookF />,
+    link: "https://www.facebook.com/someaim.adhikari.1/",
+  },
+  { id: 2, icon: <FaTwitter />, link: "https://twitter.com/SomeAim" },
+  {
+    id: 3,
+    icon: <FaYoutube />,
+    link: "https://www.youtube.com/channel/UCUtVNdBHoYaJ4JQtdEw8Ssg",
+  },
+  {
+    id: 4,
+    icon: <PiInstagramLogoFill />,
+    link: "https://www.instagram.com/someaim1/",
+  },
 ];
 
 const Footer = () => {
@@ -26,11 +38,13 @@ const Footer = () => {
         <div className="w-[80%] m-auto max-sm:w-[90%]">
           <div className="flex justify-between pt-3 pb-5 max-sm:block max-sm:pt-5">
             <div className="flex items-center">
-              <img
-                src="/favicon.png"
-                alt="logo"
-                className="w-[4em] max-sm:w-[3.5em] bg-white rounded-full p-2"
-              ></img>
+              <a href="#">
+                <img
+                  src="/favicon.png"
+                  alt="logo"
+                  className="w-[4em] max-sm:w-[3.5em] bg-white rounded-full p-2"
+                ></img>
+              </a>
               <div className="pl-2">
                 <a href="#">
                   <h2 className="text-white font-medium text-xl font-josefin-sans inline-block">
@@ -59,9 +73,11 @@ const Footer = () => {
             <div className="text-white max-sm:pt-3 text-center">
               <h2 className="font-semibold text-lg">Follow Us:</h2>
               <ul className="flex text-xl gap-2 justify-center">
-                {socials.map(({ id, icon }) => (
+                {socials.map(({ id, icon, link }) => (
                   <li key={id}>
-                    <a href="">{icon}</a>
+                    <a href={link} target="blank">
+                      {icon}
+                    </a>
                   </li>
                 ))}
               </ul>
