@@ -14,7 +14,7 @@ const Products = () => {
 
   return (
     <>
-      <div>
+      <div id="vegetables">
         <h2 className=" text-medium-green font-medium border-l-[1rem] border-medium-green inline-block px-2 py-1 my-8 text-xl rounded">
           Vegetables
         </h2>
@@ -24,7 +24,7 @@ const Products = () => {
           <Card key={item.id} item={item} />
         ))}
       </div>
-      <div>
+      <div id="fruits">
         <h2 className=" text-medium-green font-medium border-l-[1rem] border-medium-green inline-block px-2 py-1 my-8 text-xl rounded">
           Fruits
         </h2>
@@ -34,7 +34,7 @@ const Products = () => {
           <Card key={item.id} item={item} />
         ))}
       </div>
-      <div>
+      <div id="dairy">
         <h2 className=" text-medium-green font-medium border-l-[1rem] border-medium-green inline-block px-2 py-1 my-8 text-xl rounded">
           Dairy Products
         </h2>
@@ -44,7 +44,7 @@ const Products = () => {
           <Card key={item.id} item={item} />
         ))}
       </div>
-      <div>
+      <div id="plants">
         <h2 className=" text-medium-green font-medium border-l-[1rem] border-medium-green inline-block px-2 py-1 my-8 text-xl rounded">
           Plants
         </h2>

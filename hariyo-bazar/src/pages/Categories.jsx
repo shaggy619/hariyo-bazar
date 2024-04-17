@@ -3,10 +3,20 @@ import { Link } from "react-router-dom";
 
 const Categories = () => {
   const categoryImages = [
-    { id: 1, img: "Images/vegetables.png", title: "Vegetables" },
-    { id: 2, img: "Images/frutits.png", title: "Fruits" },
-    { id: 3, img: "Images/dairy.png", title: "Dairy Products" },
-    { id: 4, img: "Images/plant.png", title: "Plants" },
+    {
+      id: 1,
+      img: "Images/vegetables.png",
+      title: "Vegetables",
+      link: "#vegetables",
+    },
+    { id: 2, img: "Images/frutits.png", title: "Fruits", link: "#fruits" },
+    {
+      id: 3,
+      img: "Images/dairy.png",
+      title: "Dairy Products",
+      link: "#dairy",
+    },
+    { id: 4, img: "Images/plant.png", title: "Plants", link: "#plants" },
   ];
   return (
     <>
@@ -17,16 +27,18 @@ const Categories = () => {
       </div>
 
       <div className="flex items-center justify-between max-md:flex-col">
-        {categoryImages.map(({ id, img, title }) => (
+        {categoryImages.map(({ id, img, title, link }) => (
           <div key={id}>
-            <img
-              src={img}
-              alt={title}
-              className="w-[15em] max-md:w-[10em] img-shadow transform transition-transform duration-300 cursor-pointer  ease-in-out hover:scale-105"
-            ></img>
+            <a href={link}>
+              <img
+                src={img}
+                alt={title}
+                className="w-[15em] max-md:w-[10em] img-shadow transform transition-transform duration-300 cursor-pointer  ease-in-out hover:scale-105"
+              ></img>
+            </a>
 
             <div className="text-center relative top-[-20px]">
-              <a href="#" className=" text-medium-green font-medium ">
+              <a href={link} className=" text-medium-green font-medium ">
                 {title}
               </a>
             </div>
