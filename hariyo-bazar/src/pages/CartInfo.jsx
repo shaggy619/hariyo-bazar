@@ -42,7 +42,7 @@ const CartInfo = () => {
     <div>
       <div className="relative top-36 max-sm:top-20 mb-40 max-sm:mb-24">
         {cartItems.length == 0 && (
-          <div className="w-[80%] m-auto shadow rounded-xl pb-10">
+          <div className="w-[80%] m-auto shadow rounded-xl pb-10 max-sm:mt-5">
             <div className="m-auto w-[30%] max-sm:w-[50%]">
               <img src="Images/cart.png" alt="Empty Cart" className="w-full" />
             </div>

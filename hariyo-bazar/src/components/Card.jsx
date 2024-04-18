@@ -4,7 +4,7 @@ import { CartContext } from "./CartContext";
 
 const Card = ({ item }) => {
   const [content, setContent] = useState("Add To Cart");
-  const { cartItems, addToCart, increaseQuantity } = useContext(CartContext);
+  const { cartItems, addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
     addToCart(item);

@@ -75,26 +75,28 @@ const Navbar = () => {
             )}
           </div>
           <div>
-            <a>
+            <Link to="/Login">
               <FaUserCircle
                 className="text-2xl border border-medium-green rounded-full text-medium-green hidden max-md:block"
                 onClick={handleOnclick}
               />
-            </a>
+            </Link>
           </div>
-
-          <div
-            className="flex items-center gap-2 rounded-full px-5 py-1 shadow cursor-pointer max-md:hidden"
-            onMouseOver={handleMouseEnter}
-          >
-            <div>
-              <p>Account</p>
-              <p className="text-xs text-center">Sign In</p>
+          <Link to="/Login">
+            <div
+              className="flex items-center gap-2 rounded-full px-5 py-1 shadow cursor-pointer max-md:hidden"
+              onMouseOver={handleMouseEnter}
+            >
+              <div>
+                <p>Account</p>
+                <p className="text-xs text-center">Sign In</p>
+              </div>
+              <FaUserCircle className="text-3xl text-medium-green" />
             </div>
-            <FaUserCircle className="text-3xl text-medium-green" />
-          </div>
-          {isMenuOpen && <Menu />}
-          {isClicked && <Menu handleOnclick={handleOnclick} />}
+          </Link>
+
+          {/* {isMenuOpen && <Menu />}
+          {isClicked && <Menu handleOnclick={handleOnclick} />} */}
         </div>
       </nav>
     </header>
